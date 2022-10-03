@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+
+}
+h1{
+    font-size: 5rem;
+    margin: .6em 0;
+    font-weight: 400;
+}
+p{
+    font-size: 1.5rem;
+    margin: .3em 0;
+    font-family: "DM Sans",sans-serif;
+    line-height: 30px;
+}
+a{
+    font-size: 1.5rem;
+    color: #969696;
+}
+button{
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    background: -webkit-radial-gradient(top right, circle, #FFFCEB 20%,rgba(255, 251, 229, 0) 45%); 
+   height: auto;
+}
+/* navbar starts here */
+.nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(15%);
+    /* position: fixed;
+    top: 0;
+    left: 50px; */
+
+}
+.nav .logo{
+  width: 100px ;
+}
+.navbar .hmg{
+  display: none;
+}
+.nav .navlinks{
+    width: 35%;
+}
+.navlinks .navlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* common btn */
+.nav .btn,.content .btn{
+    border: none;
+    background: #FFD500;
+    outline: none;
+    border-radius: 22px;
+    padding: 1em 1.5em;
+    font-size: 1.2rem;
+
+}
+/* nav ends */
+
+/* all section initial stylingn combine here */
+.content,.get-started,.get-loan,.download-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0 5px;
+}
+/* text section */
+.content .text-sec{
+    flex-basis: 50%;
+    width: 70%;
+    margin-left: 100px;
+    background: url(images/ecclipse.png);
+    background-size: 400px;
+    background-position:left center;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+.content .btn{
+    margin: .8em 0;
+}
+.content .img-sec{
+    flex-basis: 35%;
+    position: relative;
+    text-align: right;
+}
+.content .right_hand{
+    width: 400px;
+
+}
+.content .coin-base{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.coin-base .coin{
+    max-width: 80px;
+    position: absolute;
+}
+.coin-base .coin3{
+    left: -100px;
+    top: 50px;
+    animation: rotate 6s ease-in infinite 5s ;
+    
+}
+
+
+.coin-base .coin1{
+    right: 20px;
+    top: 30px;
+    display: inline-flex;
+    animation:rotate 6s linear infinite 5s ;
+}
+.coin-base .coin2{
+   bottom:  40px;
+    left: 50px;
+}
+@keyframes rotate {
+    0%{
+     transform:rotateY(0deg);   
+    }
+    50%{
+        transform: scale(1.2);
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+    
+}
+/* get started section */
+.get-started .text-sect{
+    flex-basis: 48%;
+    margin-right: 10px;
+}
+.text-sect .liner,.get-loan .text-sec .liner{
+    transform: translateY(40px);
+}
+.text-sect .liner .line,
+.get-loan .text-sec .liner .line{
+    width: 200px;
+    height: 6px;
+    background: #FFD500;
+    display: block;
+    border-radius: 10px;
+}
+
+.text-sect .text-container{
+    width: 90%;
+    margin-left: 100px;
+    text-align: left;
+    margin-right: 20px;
+}
+.text-container .specialBtn{
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.specialBtn .arrow{
+    display: inline-block;
+    transform: translateY(3.7px);
+    margin-left: 10px;
+    padding: 5px;
+}
+/* cta section starts */
+.get-started .cta-sec{
+flex-basis: 48%;
+margin-right: 10px;
+}
+
+.cta-sec .container{
+    width: 90%;
+    height: auto;
+    background: #FFF7C7;
+    border-radius: 40px;
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.container .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   min-height: 260px;
+   /* padding: 20px; */
+   /* background: #FFD500; */
+}
+.top .box{
+    width: 220px;
+    min-height: 220px;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 10px 8px;
+}
+.top .second{
+    align-self: flex-end;
+}
+.top .first{
+    align-self: flex-start;
+}
+.box img{
+    margin: 5px 0;
+}
+.box p{
+    font-size: 1rem;
+    margin: 4px 0;
+}
+/* getting started sec ends here */
+/* ************ */
+/* how to get loan section starts here */
+.get-loan .image-sec{
+    flex-basis: 40%;
+}
+.image-sec .img{
+    width: 80%;
+    margin: auto;
+}
+.img img{
+    max-width: 400px; 
+}
+.get-loan .text-sec{
+    flex-basis: 60%;
+}
+.text-sec .article{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.article .box-2{
+    max-width: 350px;
+    height: 260px;
+    text-align: center;
+    border: 1px solid #00000033;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    margin-bottom: 15px;
+}
+.box-2 h2{
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin: .3em 0;
+}
+.box-2 p{
+    font-size: 1.1rem;
+}
+.get-loan{
+   margin-top: 100px;
+}
+/* download app section */
+.download-section .color-background{
+    width: 85%;
+    min-height: 400px;
+    background-color: #FFD500;
+    margin: auto;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    /* transform: translateY(65px); */
+    position: relative;
+}
+.download-section{
+    position: relative;
+    height: 700px;
+    /* height: auto; */
+    /* padding: 0; */
+}
+.color-background .mask-img{
+width: 100%;
+height: 400px;
+z-index: 5;
+margin: auto;
+position: absolute;
+left: 0;
+top: 0;
+opacity: .4;
+}
+.color-background{
+    flex-wrap: wrap;
+}
+.color-background .text-section{
+    flex-basis: 60%;
+}
+.text-section h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.color-background .phone-img{
+    flex-basis: 40%;
+    position: relative;
+}
+.color-background .phone-img img{
+    position: absolute;
+    max-width:330px ;
+    top: -188px;
+    right: 0;
+    z-index: 3;
+}
+.text-section .btn{
+    display: flex;
+    margin: 30px 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn button{
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    font-weight: 400;
+    font-size: 1.3rem;
+    justify-content: space-evenly;
+    margin: 12px 0;
+    padding: 12px 5px;
+    width: 250px;
+    white-space: nowrap;
+    z-index: 10;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: black;
+    margin-top: 30px;
+}
+.footer .footer-text{
+    width: 80%;
+    /* min-height: 300px; */
+    margin:40px auto;
+    text-align: center;
+    background: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-text h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.footer hr{
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid white;
+}
+@media screen and (max-width:1000px) {
+    .content .text-sec {
+            flex-basis: 100%;
+        margin:10px 50px;
+    }
+    .content .text-sec h1{
+        margin-left: -10px;
+    }
+    .content .img-sec {
+        display: none;
+    }
+
+    .text-sect .text-container {
+            margin-left: 50px;
+        }
+        .get-started .text-sect {
+            flex-basis: 100%;
+        }
+        .get-started .cta-sec {
+            flex-basis: 100%;
+            margin: 60px 0 30px;
+        }
+        .get-loan .text-sec {
+            flex-basis: 100%;
+        }
+        .get-loan .image-sec {
+            flex-basis: 100%;
+        }
+        .text-sec h1 {
+            margin-left: 50px;
+        }
+        .get-loan .text-sec .liner .line{
+            margin-left: 50px;
+        }
+        .color-background .mask-img {
+            /* width: 100%;
+            min-height: 550px; */
+            display: none;
+        }
+        .color-background .phone-img img {
+           
+            top: -38px;
+            right: 0;
+            left: 3px;
+        }
+}
+@media screen and (max-width:785px) {
+    .nav .btn,
+        .content .btn {
+            
+            padding: .7em 1.2em;
+            font-size: 1rem;
+    
+        }
+    .color-background .phone-img{
+        display: none;
+    }
+        .download-section {
+            position: relative;
+            /* height: 500px; */
+            /* background-color:red; */
+        }
+          .download-section  .color-background{
+                transform:none;
+            }
+    .color-background .text-section{
+        flex-basis: 100%;
+    }
+    a{
+        font-size: 1rem;
+    }
+    button{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 3.7rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    
+    .nav .logo {
+        width: 60px;
+    }
+    .box-2 h2{
+        font-size: 2rem;
+    }
+    .box-2 p{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:485px){
+    .content .text-sec {
+            flex-basis: 100%;
+            margin: 10px 0 0 20px;
+        }
+        .text-sec h1 {
+            margin-left: 20px;
+        }
+
+        .get-loan .text-sec .liner .line {
+            margin-left: 20px;
+        }
+        .text-sect .text-container {
+            margin-left: 20px;
+        }
+    .header .nav{
+        display: block;
+    }
+    .nav .hmg{
+        display: initial;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav .navlinks{
+        background:#FFFCEB;
+            width: 100%;
+            /* margin-top: 10px; */
+            transition: ease-in .3s;
+            height: 0;
+             overflow: hidden; 
+    }
+    .nav .show-nav{
+        height: 120px;
+    }
+    .nav .navlink{
+        display: block;
+        margin: 10px 10px;
+       
+    }
+        .navlink li{
+            margin: 20px 0;
+        }
+    .cta-sec .container{
+        background: none;
+        display: block;
+    }
+    .container .top{
+        display: block;
+        
+    }
+    .top .box{
+    background: #FFF7C7;
+    }
+        h1 {
+            font-size: 3rem;
+        }
+                .get-loan .text-sec{
+                    margin-top: 70px;
+                }
+        .text-sect .liner,
+        .get-loan .text-sec .liner {
+            transform: translateY(20px);
+        }
+        .image-sec{
+            display: none;
+        }
+        .text-sec .article{
+            display: block;
+            margin: 10px 0 0 20px;
+            
+        }
+        .article .box-2{
+            text-align: left;
+        }
+        .text-section h2 {
+            font-size: 2rem;
+        }
+
+}
+@media screen and (max-width:375px) {
+  
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  p {
+      font-size: 1.04rem;
+  }
+
+  
+  .box-2 h2 {
+      font-size: 1.8rem;
+  }
+
+  .box-2 p {
+      font-size: 1rem;
+  }
+  .btn button{
+    width:200px ;
+    font-size: 1rem;
+  }
+  button img{
+    width: 30px;
+  }
+  
+}
